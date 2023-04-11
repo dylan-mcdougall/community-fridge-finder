@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Community Fridge Finder</title>
+</head>
+<body>
+    <!-- create a nav with minimal funcionality -->
+    <nav class="nav" id="navbar">
+        <ul>
+            <li class="nav-link">
+                <h2 href="#" id="title">Community Fridge Finder</h2>
+            </li>
+            <li class="nav-link">
+                <input type="text" placeholder="Enter an address or zipcode">
+            </li>
+            <li class="nav-link">
+                <a href="" id="about">
+                    
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="" class="" id="help">
+                    
+                </a>
+                
+            </li>
+            <li class="nav-link">
+                <a href="" class="nav-button" id="sign-up">
+                    
+                </a>
+            </li> 
+            <li class="nav-link">
+                <a href="" class="nav-button" id="sign-in">
+                    
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper" id="body">
+        <div class="content" id="about-content">
+            <h1 class="header" id="about-title">What is a Community Fridge?</h1>
+            <div class="paragraph" id="about-paragraph">
+                <p>
+                    The origin of community refrigerators dates back to the early 2010s, when grassroots activists
+                     and compassionate individuals sought to address food waste and food insecurity in their local communities. 
+                     These public fridges, often found in urban areas, serve as a communal space where residents can donate surplus food 
+                     and those in need can access fresh, nutritious items free of charge. The primary purpose of these refrigerators is to 
+                     foster a sense of solidarity and communal responsibility, as well as to provide a sustainable solution to hunger and food 
+                     waste. Over the years, community refrigerators have had a significant impact on many lives, not only alleviating hunger for 
+                     vulnerable populations but also promoting a culture of sharing, environmental consciousness, and social cohesion. As they continue 
+                     to grow in popularity, these fridges have the potential to further empower communities and create a more equitable and sustainable 
+                     food system. 
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            let map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8, 
+                center: { lat: -34.397, lng: 150.644 }
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BI8ogD_4jBciYuId3NvC9Mx3Cjj8EDY&callback=initMap"></script>
+    
+</body>
+</html>
