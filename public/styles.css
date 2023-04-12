@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* style the nav to properly represent a navbar */
+/* style the header to properly represent a navbar */
 header {
     display: flex;
     justify-content: space-between;
@@ -83,4 +83,12 @@ header h1 {
 
 header h1:hover {
     color: whitesmoke;
+}
+
+/* map creation and styling */
+div .map {
+    display: block;
+    padding-top: 4rem;
+    height: 100%;
+    width: 100%;
 }
