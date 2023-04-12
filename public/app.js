@@ -1,16 +1,9 @@
-import {Loader} from "/js-api-loader"
-import apiKey from "../secrets.js"
+let map;
 
-const loader = new Loader({
-  apiKey: apiKey,
-  version: "weekly"
-});
+function initMap() {
 
-loader.load().then(async () => {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  const map = new Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
     zoom: 8,
   });
-});
+}

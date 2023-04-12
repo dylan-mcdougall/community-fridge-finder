@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles.css" rel="stylesheet">
-    <base href="/">
     <title>Community Fridge Finder</title>
-    <script type="module" src="./app.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BI8ogD_4jBciYuId3NvC9Mx3Cjj8EDY&callback=initMap&libraries=&v=weekly"></script>
 </head>
 <body>
     <!-- create a nav with minimal funcionality -->
@@ -30,5 +29,12 @@
     </header>
     <!-- create the map content using maps API -->
     <div class="map" id="map"></div>
+    <script>
+        function initMap() {
+            let map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: { lat: 36.737, lng: 119.787 }});
+            let marker = new google.maps.Marker({position: { lat: 36.737, lng: 119.787 }, map: map})
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BI8ogD_4jBciYuId3NvC9Mx3Cjj8EDY&callback=initMap"></script>
 </body>
 </html>

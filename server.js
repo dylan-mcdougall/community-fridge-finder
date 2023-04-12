@@ -11,10 +11,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'landing.html'));
 });
 
-app.get('/secrets.js', (req, res) => {
-  res.sendFile(path.join(__dirname + '/secrets.js'))
-})
-
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
