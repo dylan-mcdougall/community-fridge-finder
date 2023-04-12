@@ -1,5 +1,5 @@
-import {Loader} from "./node_modules/@googlemaps/js-api-loader"
-import apiKey from "./secrets.js"
+import {Loader} from "/js-api-loader"
+import apiKey from "../secrets.js"
 
 const loader = new Loader({
   apiKey: apiKey,

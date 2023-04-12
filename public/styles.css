@@ -86,9 +86,9 @@ header h1:hover {
 }
 
 /* map creation and styling */
-div .map {
+.map {
     display: block;
     padding-top: 4rem;
-    height: 100%;
+    height: calc(100% - 4rem);
     width: 100%;
 }
