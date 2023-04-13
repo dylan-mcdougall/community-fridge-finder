@@ -12,6 +12,9 @@ body {
     border: none;
     padding: 0;
     margin: 0;
+    background-image: url("./assets/produce.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* style the header to properly represent a navbar */
@@ -86,11 +89,14 @@ header h1:hover {
 }
 
 /* map creation and styling */
+.container {
+    padding-left: 9.8rem;
+    padding-top: 3.99rem;
+    height: calc(100vh - 4rem);
+    width: 90vw;
+}
+
 .map {
-    display: block;
-    position: fixed;
-    padding-left: 10%;
-    padding-top: 4rem;
-    height: 80%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
 }
