@@ -89,14 +89,41 @@ header h1:hover {
 }
 
 /* map creation and styling */
+.invis {
+    height: 4rem;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .container {
-    padding-left: 9.8rem;
-    padding-top: 3.99rem;
-    height: calc(100vh - 4rem);
-    width: 90vw;
+    padding-bottom: 4rem;
+    height: 100%;
+    width: 70%;
 }
 
 .map {
     height: 100%;
     width: 100%;
+    margin: 0;
+}
+
+.about {
+    text-align: center;
+    margin-left: 8rem;
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 30px;
+    line-height: 20pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
 }
