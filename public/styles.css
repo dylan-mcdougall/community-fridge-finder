@@ -38,7 +38,7 @@ li, a, button, input {
     padding: 8px;
 }
 
-header h1 {
+header #title {
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
     font-weight: 500;
@@ -79,12 +79,12 @@ header button:hover {
     background-color: black;
 }
 
-header h1 {
+header #title {
     cursor: pointer;
     transition: all .3s ease 0s;
 }
 
-header h1:hover {
+header #title:hover {
     color: whitesmoke;
 }
 
@@ -108,22 +108,37 @@ header h1:hover {
     padding-bottom: 4rem;
     height: 100%;
     width: 70%;
+    border-radius: 30px;
 }
 
 .map {
     height: 100%;
     width: 100%;
     margin: 0;
+    border-radius: 30px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: larger;
+    padding: 4pt;
+    text-indent: 0;
 }
 
 .about {
-    text-align: center;
-    margin-left: 8rem;
-    width: 60vw;
-    height: 60vh;
-    background-color: white;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
     border-radius: 30px;
-    line-height: 20pt;
+    line-height: 25pt;
+    text-indent: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
+    padding: 4pt;
+}
+
+.about p {
+    padding: 4px;
 }
